@@ -1,0 +1,71 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.3|^8.0",
+        "astrotomic/laravel-translatable": "^11.10",
+        "doctrine/dbal": "^3.4",
+        "intervention/image": "^2.7",
+        "intervention/imagecache": "^2.5",
+        "laravel/framework": "9.0",
+        "laravel/helpers": "^1.5",
+        "laravel/tinker": "^2.7",
+        "laravel/ui": "3.*",
+        "stripe/stripe-php": "^9.6",
+        "symfony/yaml": "^6.1",
+        "tormjens/eventy": "^0.8.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeders",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Corp\\": "app/",
+            "App\\": "app/",
+            "Database\\Seeders\\": "database/seeders/",
+            "V\\Plugins\\" : "packages/V/Plugins/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.7",
+        "filp/whoops": "^2.14",
+        "fzaninotto/faker": "^1.5",
+        "mockery/mockery": "^1.5",
+        "nunomaduro/collision": "^6.3",
+        "phpunit/phpunit": "^9.5"
+    }
+}
