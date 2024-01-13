@@ -1,7 +1,7 @@
 <?php return array (
   'RentIt' => 
   array (
-    'header_logo' => '68',
+    'header_logo' => '69',
     'rentit_header_icons' => 
     array (
       'icon' => 
@@ -111,7 +111,7 @@
   ),
   'RentIt_en' => 
   array (
-    'header_logo' => '68',
+    'header_logo' => '69',
     'rentit_header_icons' => 
     array (
       'icon' => 

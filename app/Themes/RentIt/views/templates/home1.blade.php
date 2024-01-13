@@ -188,157 +188,6 @@
 </section>
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s">
-                <div class="thumbnail thumbnail-featured no-border no-padding">
-                    <div class="media">
-                        <a class="media-link" href="#">
-                            <div class="caption">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-support"></i></div>
-                                        <h4 class="caption-title">7/24 Car Support</h4>
-                                        <div class="caption-text">{{__("Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque,lacinia at tempor vitae, porta at arcu.")}}</div>
-                                        <div class="buttons">
-                                            <span onclick="window.location.href='#'"
-                                                  class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption hovered">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-support"></i></div>
-                                        <h4 class="caption-title">7/24 Car Support</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="200ms">
-                <div class="thumbnail thumbnail-featured no-border no-padding">
-                    <div class="media">
-                        <a class="media-link" href="#">
-                            <div class="caption">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-calendar"></i></div>
-                                        <h4 class="caption-title">{{__("Reservation Anytime")}}</h4>
-                                        <div class="caption-text">{{__("Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque,lacinia at tempor vitae, porta at arcu.")}}</div>
-                                        <div class="buttons">
-                                            <span class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption hovered">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-calendar"></i></div>
-                                        <h4 class="caption-title">{{__("Reservation Anytime")}}</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="400ms">
-                <div class="thumbnail thumbnail-featured no-border no-padding">
-                    <div class="media">
-                        <a class="media-link" href="#">
-                            <div class="caption">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-map-marker"></i></div>
-                                        <h4 class="caption-title">{{__("Lots of Locations")}}</h4>
-                                        <div class="caption-text">{{__("Duis bibendum diam non erat facilaisis tincidunt. Fusce leo neque,lacinia at tempor vitae, porta at arcu.")}}</div>
-                                        <div class="buttons">
-                                            <span class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption hovered">
-                                <div class="caption-wrapper div-table">
-                                    <div class="caption-inner div-cell">
-                                        <div class="caption-icon"><i class="fa fa-map-marker"></i></div>
-                                        <h4 class="caption-title">{{__("Lots of Locations")}}</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
-<section class="page-section dark">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms">
-                <h2 class="section-title text-left">
-
-                    <small>{{__("What Do You Know About Us")}}</small>
-                    <span>{{__('Who We Are ?')}}</span>
-                </h2>
-                <p>{{__("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. ")}}</p>
-                <ul class="list-icons">
-                    <li>
-                        <i class="fa fa-check-circle"></i>{{__("Lorem ipsum dolor sit amet, consectetur adipiscing elit.")}}
-                    </li>
-                    <li><i class="fa fa-check-circle"></i>{{__("Proin tempus sapien non iaculis pretium.")}}</li>
-                </ul>
-                <p class="btn-row">
-                    <a href="#" class="btn btn-theme ripple-effect btn-theme-md">{{__("See All Vehicles")}}</a>
-                    <a href="#"
-                       class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Reservation Now")}}</a>
-                </p>
-            </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="owl-carousel img-carousel">
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
 <section class="page-section">
     <div class="container">
 
@@ -454,8 +303,206 @@
 </section>
 <!-- /PAGE -->
 
+
+<section class="page-section" style="padding: 20px; font-family: Arial, sans-serif;">
+    <div class="container">
+
+        <h2 class="section-title" style="text-align: center; font-weight: bold; margin-bottom: 30px; color: #333;">
+            WHAT DOCUMENTS ARE REQUIRED TO RENT A CAR IN DUBAI?
+        </h2>
+
+        <p style="text-align:center;">The following documents are required for booking or making reservations for car rental services for people residing in the UAE.</p>
+
+        <div class="row" style="margin-bottom: 10px;text-align:center;">
+            <div class="col-md-6">
+                <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For UAE Residents</h3>
+                <ul style="list-style: none; padding: 0; color: #555;">
+                    <li>Passport copy</li>
+                    <li>Valid UAE driving license</li>
+                    <li>Copy of Emirates ID</li>
+                </ul>
+            </div>
+            <div class="col-md-6" style="text-align:center;">
+                <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For Tourists visiting UAE</h3>
+                <ul style="list-style: none; padding: 0; color: #555;">
+                    <li>Passport copy</li>
+                    <li>Valid International driving license</li>
+                    <li>Copy of Visit Visa/ Visa stamp</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+    <div class="col-md-11 col-md-offset-1" style="background-color: #FFC107; text-align: center; padding: 10px; color: #333; font-weight:bold; border-radius:10px; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,.2);">
+        Visitors from European / GCC Countries can drive on their home country driving license (when on Visit Visa)
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+<!-- PAGE -->
+<!-- <section class="page-section">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s">
+                <div class="thumbnail thumbnail-featured no-border no-padding">
+                    <div class="media">
+                        <a class="media-link" href="#">
+                            <div class="caption">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-support"></i></div>
+                                        <h4 class="caption-title">Teacher Deals</h4>
+                                        <div class="caption-text">5,000 km monthly instead of 4,000, 800 deposit </br>  for monthly rental instead of 1000, 100 AED off in rental price </div>
+                                        <div class="buttons">
+                                            <span onclick="window.location.href='#'"
+                                                  class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption hovered">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-support"></i></div>
+                                        <h4 class="caption-title">Teacher deals</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="200ms">
+                <div class="thumbnail thumbnail-featured no-border no-padding">
+                    <div class="media">
+                        <a class="media-link" href="#">
+                            <div class="caption">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-calendar"></i></div>
+                                        <h4 class="caption-title">New in Dubai</h4>
+                                        <div class="caption-text">Accept New Driving license,  1000 deposit for monthly rent  instead of 1500 for new driving license. </div>
+                                        <div class="buttons">
+                                            <span class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption hovered">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-calendar"></i></div>
+                                        <h4 class="caption-title">New in Dubai</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="400ms">
+                <div class="thumbnail thumbnail-featured no-border no-padding">
+                    <div class="media">
+                        <a class="media-link" href="#">
+                            <div class="caption">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-map-marker"></i></div>
+                                        <h4 class="caption-title">Long Term</h4>
+                                        <div class="caption-text">Special offers & prices upon request </br> </br> </br> </div>
+                                        <div class="buttons">
+                                            <span class="btn btn-theme ripple-effect btn-theme-transparent">{{__("Read More")}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="caption hovered">
+                                <div class="caption-wrapper div-table">
+                                    <div class="caption-inner div-cell">
+                                        <div class="caption-icon"><i class="fa fa-map-marker"></i></div>
+                                        <h4 class="caption-title">Long Term</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section> -->
+<!-- /PAGE -->
+
+<!-- PAGE -->
+<section class="page-section dark">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms">
+                <h2 class="section-title text-left">
+
+                    <span>{{__('GoldenLease - Not The Average Car Rental Company')}}</span>
+                </h2>
+                <p>
+                Welcome to Golden Lease Rent a Car – your premier choice for Affordable Car Rentals in Dubai. Our extensive fleet offers a variety of vehicles, from compact cars to SUVs and vans, providing excellent options for exploring Dubai. Our dedicated team in Dubai ensures a seamless rental experience.
+                </p>
+                <p>
+                In addition to standard car rentals, we offer services like GPS navigation, car seats, and roadside assistance, catering to your needs in Dubai. At Golden Lease Rent a Car, safety is a priority, with all Dubai-based vehicles undergoing rigorous inspection.
+                </p>
+                <p>
+                Choose us as your trusted partner for car rentals in Dubai. Your journey begins with Golden Lease Rent a Car – where quality meets affordability in the heart of Dubai.
+                            </p>
+                <p class="btn-row">
+                    <a href="#"
+                       class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Our Company")}}</a>
+                </p>
+            </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
+                <div class="owl-carousel img-carousel">
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1-775x500x1.webp"
+                                data-gal="prettyPhoto"><img class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1.webp"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- /PAGE -->
+
+<!-- PAGE -->
+
+
 <!-- PAGE -->
 <section class="page-section testimonials">
+
+<h2 class="section-title wow fadeInUp" data-wow-offset="70" data-wow-delay="100ms">
+            <span>{{__("OUR BELOVED CLIENTS")}}</span>
+
+        </h2>
+
     <div class="container wow fadeInUp" data-wow-offset="70" data-wow-delay="500ms">
         <div class="testimonials-carousel">
             <div class="owl-carousel" id="testimonials">
@@ -469,9 +516,8 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <div class="testimonial-text">{{__("Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.")}}</div>
-                            <div class="testimonial-name">{{__("John Anthony Gibson ")}}<span
-                                        class="testimonial-position">{{__("Co- founder at Rent It")}}</span></div>
+                            <div class="testimonial-text">{{__("I have rented cars from several different companies in the past, but this rent-a-car company stands out as the best. The staff is always friendly and helpful, and the process of booking and picking up my rental is always seamless. The cars are always clean and in excellent condition. I highly recommend this company to anyone in need of a rental car.")}}</div>
+                            <div class="testimonial-name">{{__("Ana ")}}</div>
                         </div>
                     </div>
                 </div>
@@ -485,9 +531,8 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <div class="testimonial-text">{{__("Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.")}}</div>
-                            <div class="testimonial-name">{{__("John Anthony Gibson ")}}<span
-                                        class="testimonial-position">{{__("Co- founder at Rent It")}}</span></div>
+                            <div class="testimonial-text">{{__("I have been a loyal customer of this rent-a-car company for years, and I am always blown away by the level of professionalism and kindness shown by the staff. The cars are always clean and well-maintained, and the process of booking and picking up my rental is always seamless. I highly recommend this company to anyone in need of a rental car.")}}</div>
+                            <div class="testimonial-name">{{__("Ahmed")}}</div>
                         </div>
                     </div>
                 </div>
@@ -501,9 +546,23 @@
                             </a>
                         </div>
                         <div class="media-body">
-                            <div class="testimonial-text">{{__("Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.")}}</div>
-                            <div class="testimonial-name">{{__("John Anthony Gibson ")}}<span
-                                        class="testimonial-position">{{__("Co- founder at Rent It")}}</span></div>
+                            <div class="testimonial-text">{{__("I recently had the pleasure of renting a car from this company for a business trip, and I was thoroughly impressed with the level of service I received. The staff was knowledgeable and accommodating, and the car was clean and well-maintained. I will definitely be using this company for all of my future car rental needs.")}}</div>
+                            <div class="testimonial-name">{{__("John")}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object testimonial-avatar"
+                                     src="{{ asset(config('settings.theme')) }}/assets/img/preview/avatars/testimonial-140x140x1.jpg"
+                                     alt="Testimonial avatar">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="testimonial-text">{{__("I have rented cars from several different companies in the past, but this rent-a-car company has consistently exceeded my expectations. The staff is always friendly and helpful, and the cars are always in excellent condition. I highly recommend this company to anyone in need of a rental car.")}}</div>
+                            <div class="testimonial-name">{{__("Ashiq")}}</div>
                         </div>
                     </div>
                 </div>
@@ -776,6 +835,8 @@
 </section>
 <!-- /PAGE -->
 
+
+
 <!-- PAGE -->
 <section class="page-section image">
     <div class="container">
@@ -969,343 +1030,8 @@
 </section>
 <!-- /PAGE -->
 
-<!-- PAGE -->
-<section class="page-section find-car dark">
-    <div class="container">
-
-        <form action="{{ route('products.index') }}" method="get" class="form-find-car">
-            <div class="row">
-
-                <div class="col-md-3 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-
-                    <h2 class="section-title text-left no-margin">
-                        <small>{{__("Great Rental Cars")}}</small>
-                        <span>{{__("Find your car")}}</span>
-                    </h2>
-
-                </div>
-                <div class="col-md-3 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-                    <div class="form-group has-icon has-label">
-
-                        <label for="formFindCarLocation">{{__("Picking Up Location")}}</label>
-                        <select name="PickingUpLocation"
-                                class="selectpicker input-price"
-                                data-live-search="true" data-width="100%"
-                                data-toggle="tooltip"
-                                id="formFindCarLocation"
-                        >
-                            @if($locations ?? false)
-                                @foreach($locations as $location)
 
 
-                                    <option
-                                        <?php  selected( old( 'PickingUpLocation' ), $location->alias ); ?>
-                                        value="{{$location->alias}}">{{$location->title}}</option>
-                                @endforeach
-                            @endif
-                        </select>
-                        <span class="form-control-icon"><i class="fa fa-location-arrow"></i></span>
-
-                    </div>
-                </div>
-                <div class="col-md-2 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
-                    <div class="form-group has-icon has-label">
-                        <label for="formFindCarDate">{{__("Picking Up Date")}}</label>
-                        <input type="text" class="form-control datepicker" id="formFindCarDate"
-                               placeholder="dd/mm/yyyy">
-                        <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
-
-                    </div>
-                </div>
-                <div class="col-md-2 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
-                    <div class="form-group has-icon has-label">
-                        <label for="formFindCarCategory">{{__("Price Category")}}</label>
-
-                        <select name="group"
-                                class="selectpicker input-price"
-                                data-live-search="true" data-width="100%"
-                                data-toggle="tooltip"
-                                id="formFindCarCategory"
-                        >
-                            @if($terms ?? false)
-                                @foreach($terms as $group)
-                                    @if($group->type == 'group')
-                                        <option
-                                            <?php  selected( old( 'PickingUpLocation' ), $group->alias ); ?>
-                                            value="{{$group->alias}}">{{$group->title}}</option>
-                                    @endif
-                                @endforeach
-                            @endif
-                        </select>
-                        <span class="form-control-icon"><i class="fa fa-bars"></i></span>
-                    </div>
-                </div>
-                <div class="col-md-2 wow fadeInDown" data-wow-offset="200" data-wow-delay="500ms">
-                    <div class="form-group">
-                        <button type="submit" id="formFindCarSubmit"
-                                class="btn btn-block btn-submit ripple-effect btn-theme">{{__("Find Car")}}</button>
-                    </div>
-                </div>
-
-            </div>
-        </form>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
-<section class="page-section no-padding no-bottom-space-off">
-    <div class="container full-width">
-
-        <!-- Google map -->
-        <div class="google-map">
-            <div id="map-canvas"></div>
-        </div>
-        <!-- /Google map -->
-
-    </div>
-</section>
-
-<script type="text/javascript">
-    var
-        mapObject,
-        markers = [],
-        markersData =  {!! $markersData  !!}
-
-
-    }
-    ;
-
-
-    function initialize_map() {
-
-
-        loadScript("/rentit/js/infobox.js", after_load);
-
-    }
-
-    function after_load() {
-        var global_scrollwheel = false;
-        var markerClusterer = null;
-        var markerCLuster;
-        var Clusterer;
-
-        initialize_new2();
-    }
-
-    function loadScript(src, callback) {
-        var s,
-            r,
-            t;
-        r = false;
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = src;
-        s.onload = s.onreadystatechange = function () {
-            ////console.log( this.readyState ); //uncomment this line to see which ready states are called.
-            if (!r && (!this.readyState || this.readyState == 'complete')) {
-                r = true;
-                callback();
-            }
-        };
-        t = document.getElementsByTagName('script')[0];
-        t.parentNode.insertBefore(s, t);
-
-    }
-</script>
-<!-- /PAGE -->
-
-
-<!-- PAGE -->
-<section class="page-section">
-    <div class="container">
-
-        <h2 class="section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-            <small>{{__("Rental Magazine Here")}}</small>
-            <span>{{__("Recent Blog Posts")}}</span>
-        </h2>
-
-        <div class="row">
-            @if($posts)
-                @foreach($posts as $post)
-                    <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="200ms">
-                        <div class="recent-post alt">
-                            <div class="media">
-                                <a class="media-link" href="#">
-                                    <div class="badge type">{{__("Car Service")}}</div>
-                                    <div class="badge post"><i class="fa  fa-image"></i></div>
-                                    @if(isset($post->img) && $post->img > 0)
-
-                                        <img class="media-object" src="{{ the_image_url($post->img,'thumbnail-570x270 ') }}">
-                                        <i class="fa fa-plus"></i>
-
-                                    @endif
-                                </a>
-                                <div class="media-left">
-                                    <div class="meta-date">
-                                        <div class="day">{{$post->created_at->format('d') ?? ''}}</div>
-                                        <div class="month">{{$post->created_at->format('M') ?? ''}}</div>
-                                    </div>
-                                </div>
-                                <div class="media-body">
-                                    <div class="media-meta">
-                                        {{__('By')}}{{$post->user->name ?? ''}}
-                                    </div>
-                                    <h4 class="media-heading"><a
-                                                href="{{ route('posts.show',['alias' => $post->alias]) }}">{{$post->title}}</a></h4>
-                                    <div class="media-excerpt">{{$post->desc}}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            @endif
-
-        </div>
-
-        <div class="text-center margin-top wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-            <a href="{{ route('posts.index') }}" class="btn btn-theme ripple-effect btn-theme-light btn-more-posts">{{__("See All Posts")}}</a>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
-<section class="page-section image subscribe">
-    <div class="container">
-
-        <h2 class="section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-            <small>{{__("You Can Follow Us By E Mail")}}</small>
-            <span>{{__("Subscrıbe")}}</span>
-        </h2>
-
-        <div class="row wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-            <div class="col-md-8 col-md-offset-2">
-
-                <p class="text-center">{{__("This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.")}}</p>
-
-                <!-- Subscribe form -->
-                <form action="#" class="form-subscribe mail-chimp">
-                    <div class="form-group">
-                        <label for="formSubscribeEmail" class="sr-only">{{__("Enter your email here")}}</label>
-                        <input type="text" class="form-control" id="formSubscribeEmail"
-                               placeholder="Enter your email here" title="Email is required">
-                    </div>
-                    <button type="submit"
-                            class="btn btn-submit btn-theme ripple-effect btn-theme-dark">{{__("Subscribe")}}</button>
-                </form>
-                <!-- Subscribe form -->
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
-
-<!-- PAGE -->
-<section class="page-section">
-    <div class="container">
-
-        <h2 class="section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-            <small>{{__("Do You Have Any Question or Anything else ")}}</small>
-            <span>{{__("Costumer service")}}</span>
-        </h2>
-
-        <!-- Team row -->
-        <div class="row">
-
-            <!-- Team 1 -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-                <div class="thumbnail thumbnail-team no-border no-padding">
-                    <div class="media">
-                        <img src="{{ asset(config('settings.theme')) }}/assets/img/preview/team/team-270x270x1.jpg"
-                             alt=""/>
-                    </div>
-                    <div class="caption">
-                        <h4 class="caption-title">{{__("Kelly Doe Surname ")}}
-                            <small>{{__("Costumer Service")}}</small>
-                        </h4>
-                        <ul class="team-details">
-                            <li>{{__("Skype: team.member")}}</li>
-                            <li>{{__("Tel: 555 555-5555")}}</li>
-                            <li><a href="mailto:supportname@gmail.com">{{__("supportname@gmail.com")}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /Team 1 -->
-
-            <!-- Team 2 -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-                <div class="thumbnail thumbnail-team no-border no-padding">
-                    <div class="media">
-                        <img src="{{ asset(config('settings.theme')) }}/assets/img/preview/team/team-270x270x2.jpg"
-                             alt=""/>
-                    </div>
-                    <div class="caption">
-                        <h4 class="caption-title">{{__("Name and Surname ")}}
-                            <small>{{__("Team Title")}}</small>
-                        </h4>
-                        <ul class="team-details">
-                            <li>{{__("Skype: team.member")}}</li>
-                            <li>{{__("Tel: 555 555-5555")}}</li>
-                            <li><a href="mailto:supportname@gmail.com">{{__("supportname@gmail.com")}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /Team 2 -->
-
-            <!-- Team 3 -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="thumbnail thumbnail-team no-border no-padding">
-                    <div class="media">
-                        <img src="{{ asset(config('settings.theme')) }}/assets/img/preview/team/team-270x270x3.jpg"
-                             alt=""/>
-                    </div>
-                    <div class="caption">
-                        <h4 class="caption-title">{{__("Jane Elizabeth ")}}
-                            <small>{{__("Tech-Support")}}</small>
-                        </h4>
-                        <ul class="team-details">
-                            <li>{{__("Skype: team.member")}}</li>
-                            <li>{{__("Tel: 555 555-5555")}}</li>
-                            <li><a href="mailto:supportname@gmail.com">{{__("supportname@gmail.com")}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- /Team 3 -->
-
-            <!-- Team 4 -->
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
-                <div class="thumbnail thumbnail-team no-border no-padding">
-                    <div class="media">
-                        <img src="{{ asset(config('settings.theme')) }}/assets/img/preview/team/team-270x270x4.jpg"
-                             alt=""/>
-                    </div>
-                    <div class="caption">
-                        <h4 class="caption-title">{{__("Anthony Hopkins ")}}
-                            <small>{{__("Costumer Service")}}</small>
-                        </h4>
-                        <ul class="team-details">
-                            <li>{{__("Skype: team.member")}}</li>
-                            <li>{{__("Tel: 555 555-5555")}}</li>
-                            <li><a href="mailto:supportname@gmail.com">{{__("supportname@gmail.com")}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Team 4 -->
-
-        </div>
-        <!-- /Team row -->
-
-    </div>
-</section>
 <!-- /PAGE -->
 
 <!-- PAGE -->

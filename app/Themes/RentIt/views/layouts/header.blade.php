@@ -46,7 +46,7 @@
                 <!-- Logo --><?php
 
 				if(get_theme_mod( 'header_logo' )){ ?>
-                <div class="logo">
+                <div class="logo" style="background-color: #1D3F6E !important;">
 
                     <a href="{{ url('/') }}"
                     >

@@ -14931,8 +14931,8 @@ a:focus {
 
 .r-slider-serach.form-search .btn-submit {
   padding: 15px 50px;
-  background-color: #e60000;
-  border-color: #e60000;
+  background-color: #1D3F6E ;
+  border-color: #1D3F6E ;
   color: #ffffff; }
 
 .r-slider-serach.form-search .btn-submit:hover {
@@ -15033,7 +15033,7 @@ a:focus {
   color: #7f7f7f; }
 
 .r-slider-serach.form-search.light .row-submit a:hover {
-  color: #e60000; }
+  color: #1D3F6E ; }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .r-slider-02 .sub .caption > .container {

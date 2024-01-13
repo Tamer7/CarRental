@@ -1,4 +1,4 @@
-<section id="<?php  echo $id; ?>" class="edit page-section color  pb-module-section">
+<section id="1" class="edit page-section color  pb-module-section">
 	<div class="edit container">
 
 		<div class="edit row">

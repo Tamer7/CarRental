@@ -17,11 +17,11 @@ class ContactUs extends BaseModule {
 
 	public function show( $module = false ) {
 
-		$id = isset( $module->name ) ? $module->name : 'contact_us__0';
+		// $id = isset( $module->name ) ? $module->name : 'contact_us__0';
 
-		if ( isset( $module->value ) ) {
-			return $module->value;
-		}
+		// if ( isset( $module->value ) ) {
+		// 	return $module->value;
+		// }
 
 
 

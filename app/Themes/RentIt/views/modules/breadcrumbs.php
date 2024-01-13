@@ -1,14 +1,9 @@
-<section id="<?php  echo $id ;?>" class="page-section breadcrumbs
-<?php  echo $text_position; ?>
- pb-module-section">
 
-	<div class="container">
-		<div class="page-header">
-			<h1><?php  echo e($page->title ?? '') ?></h1>
-		</div>
-		<ul class="breadcrumb">
-			<li><a href="<?php  echo url('/'); ?>"><?php  echo __('Home'); ?> </a></li>
-			<li class="active"><?php  echo e($page->title ?? '') ?></li>
-		</ul>
-	</div>
+
+<section id="<?php echo $id; ?>" class="page-section pb-module-section" style="background-image: url('http://goldenlease.ae/wp-content/themes/motors/assets/images/title-box-default-bg.jpg'); background-size: cover; background-position: center center;">
+    <div class="container">
+        <div class="page-header" style="text-align: center;">
+            <h1 style="color: #fff;"><?php echo e($page->title ?? '') ?></h1>
+        </div>
+    </div>
 </section>
