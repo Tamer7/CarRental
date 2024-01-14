@@ -15,11 +15,11 @@ class PageSectionWithContainer extends BaseModule {
 
 	public function show( $module = false ) {
 
-		$id = isset( $module->name ) ? $module->name : 'page_section_with_container__0';
+		// $id = isset( $module->name ) ? $module->name : 'page_section_with_container__0';
 
-		if ( isset( $module->value ) ) {
-			return $module->value;
-		}
+		// if ( isset( $module->value ) ) {
+		// 	return $module->value;
+		// }
 
 
 
