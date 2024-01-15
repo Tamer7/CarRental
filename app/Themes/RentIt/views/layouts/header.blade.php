@@ -14,7 +14,46 @@
           href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon.ico">
     {!! $lr_header ?? '' !!}
+    <style>
+        .header *{
+            background-color:#1D3F6E !important;
+            color:white !important;
+        }
+       .header ,.header .header-wrapper,.header .logo a ,.header .logo,header .entry{
+        height:96px
+       }
+        
+        .header .title{
+            background-color:transparent !important;
+        }
+        .is-sticky .sf-menu.nav>li>a{padding: 28px 15px 28px 15px !important;}
+        .is-sticky .logo {
+   
+        line-height: auto !important;
 
+        }
+        .is-sticky .sf-menu .sf-with-ul:after
+        {
+            right:0.2em;
+        }
+        .top-bar{
+			background-color: black;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.top-bar span{
+			color:white;
+			font-size: 12px;
+			font-family: "Open Sans";
+		}
+		@media screen and (max-width: 991px) {
+		.top-bar {
+			display: none;
+		}
+		}
+
+
+    </style>
 </head>
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
 
@@ -36,9 +75,13 @@
 @endif
 <!-- WRAPPER -->
 <div class="wrapper">
-
+    <div class="top-bar">
+        <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
+        <span><i class="fa fa-map-marker" aria-hidden="true"></i> AL SERKAL - 801, 8TH FLOOR - BUILDING 2 17 19B STREET - PORT SAEED - DUBAI - UNITED ARAB EMIRATES</span>
+        <span><i class="fa fa-clock-o" aria-hidden="true"></i> MON - SAT 8.00 - 18.00</span>
+    </div>
     <!-- HEADER -->
-    <header class="header fixed">
+    <header class="header fixed ">
         <div class="header-wrapper">
 
             <div class="container">
@@ -52,7 +95,7 @@
                     >
 
                         @if(get_theme_mod( 'header_logo' ))
-                            <img
+                            <img 
                                     src="<?php  echo the_image_url( get_theme_mod( 'header_logo' ) ); ?>"
                                     alt=""/>
                         @endif
