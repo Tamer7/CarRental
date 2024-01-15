@@ -145,7 +145,7 @@ class AboutUsWidget extends Widgets {
                 $arr = array_combine( $instance['social']['icon'] ?? [], $instance['social']['url'] ?? []);
 
 				?>
-                <ul class="social-icons">
+                <!-- <ul class="social-icons">
 
 					<?php if ( $arr ) {
 						foreach ( $arr as $k => $v ) {
@@ -156,7 +156,7 @@ class AboutUsWidget extends Widgets {
 					} ?>
 
 
-                </ul>
+                </ul> -->
             </div>
         </div>
 		<?php

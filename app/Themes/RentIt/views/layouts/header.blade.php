@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="{{app()->getLocale()}}">
+
 <head>
     <meta charset="utf-8">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="{{$description ?? ''}}"/>
-    <meta name="keywords" content="{{$keywords ?? ''}}"/>
+    <meta name="description" content="{{$description ?? ''}}" />
+    <meta name="keywords" content="{{$keywords ?? ''}}" />
     <title>{{$title ?? ''}}</title>
 
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon.ico">
     {!! $lr_header ?? '' !!}
     <style>
-        .header *{
-            background-color:#1D3F6E !important;
-            color:white !important;
+        .header * {
+            background-color: #1D3F6E !important;
+            color: white !important;
         }
-       .header ,.header .header-wrapper,.header .logo a ,.header .logo,header .entry{
-        height:96px
-       }
-        
-        .header .title{
-            background-color:transparent !important;
+
+        .header,
+        .header .header-wrapper,
+        .header .logo a,
+        .header .logo,
+        header .entry {
+            height: 96px
         }
-        .is-sticky .sf-menu.nav>li>a{padding: 28px 15px 28px 15px !important;}
+
+        .header .title {
+            background-color: transparent !important;
+        }
+
+        .is-sticky .sf-menu.nav>li>a {
+            padding: 28px 15px 28px 15px !important;
+        }
+
         .is-sticky .logo {
-   
-        line-height: auto !important;
+
+            line-height: auto !important;
 
         }
-        .is-sticky .sf-menu .sf-with-ul:after
-        {
-            right:0.2em;
+
+        .is-sticky .sf-menu .sf-with-ul:after {
+            right: 0.2em;
         }
-        .top-bar{
-			background-color: black;
-			display: flex;
-			justify-content: space-evenly;
-		}
-		.top-bar span{
-			color:white;
-			font-size: 12px;
-			font-family: "Open Sans";
-		}
-		@media screen and (max-width: 991px) {
-		.top-bar {
-			display: none;
-		}
-		}
 
+        .top-bar {
+            background-color: #333333;
+            display: flex;
+            justify-content: space-evenly;
+        }
 
+        .top-bar span {
+            color: white;
+            font-size: 12px;
+            font-family: "Open Sans";
+        }
+
+        @media screen and (max-width: 991px) {
+            .top-bar {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
 
-@if(get_theme_mod('rentit_enable_preloader',1))
+    @if(get_theme_mod('rentit_enable_preloader',1))
     <!-- PRELOADER -->
     <div id="preloader">
         <div id="preloader-status">
@@ -72,51 +83,48 @@
         </div>
     </div>
     <!-- /PRELOADER -->
-@endif
-<!-- WRAPPER -->
-<div class="wrapper">
-    <div class="top-bar">
-        <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
-        <span><i class="fa fa-map-marker" aria-hidden="true"></i> AL SERKAL - 801, 8TH FLOOR - BUILDING 2 17 19B STREET - PORT SAEED - DUBAI - UNITED ARAB EMIRATES</span>
-        <span><i class="fa fa-clock-o" aria-hidden="true"></i> MON - SAT 8.00 - 18.00</span>
-    </div>
-    <!-- HEADER -->
-    <header class="header fixed ">
-        <div class="header-wrapper">
+    @endif
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <div class="top-bar">
+            <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i> AL SERKAL - 801, 8TH FLOOR - BUILDING 2 17 19B STREET - PORT SAEED - DUBAI - UNITED ARAB EMIRATES</span>
+            <span><i class="fa fa-clock-o" aria-hidden="true"></i> MON - SAT 8.00 - 18.00</span>
+        </div>
+        <!-- HEADER -->
+        <header class="header fixed ">
+            <div class="header-wrapper">
 
-            <div class="container">
+                <div class="container">
 
-                <!-- Logo --><?php
+                    <!-- Logo --><?php
 
-				if(get_theme_mod( 'header_logo' )){ ?>
-                <div class="logo" style="background-color: #1D3F6E !important;">
+                                    if (get_theme_mod('header_logo')) { ?>
+                        <div class="logo" style="background-color: #1D3F6E !important;">
 
-                    <a href="{{ url('/') }}"
-                    >
+                            <a href="{{ url('/') }}">
 
-                        @if(get_theme_mod( 'header_logo' ))
-                            <img 
-                                    src="<?php  echo the_image_url( get_theme_mod( 'header_logo' ) ); ?>"
-                                    alt=""/>
-                        @endif
-                    </a>
+                                @if(get_theme_mod( 'header_logo' ))
+                                <img src="<?php echo the_image_url(get_theme_mod('header_logo')); ?>" alt="" />
+                                @endif
+                            </a>
 
-                </div> <?php  } ?>
-            <!-- /Logo -->
+                        </div> <?php  } ?>
+                    <!-- /Logo -->
 
-                <!-- Mobile menu toggle button -->
-                <a href="#" class="menu-toggle btn btn-theme-transparent"><i class="fa fa-bars"></i></a>
-                <!-- /Mobile menu toggle button -->
-                <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                    <!-- Mobile menu toggle button -->
+                    <a href="#" class="menu-toggle btn btn-theme-transparent"><i class="fa fa-bars"></i></a>
+                    <!-- /Mobile menu toggle button -->
+                    <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
 
-                <!-- Navigation -->
+                    <!-- Navigation -->
 
-                <nav class="navigation closed clearfix">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <!-- navigation menu -->
-						<?php
-						/*
+                    <nav class="navigation closed clearfix">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- navigation menu -->
+                                <?php
+                                /*
                 echo cache()->rememberForever( 'header-menu', function () {
                     return app( 'BaseCms' )->nav_menu( [
                         'theme_location' => 'header-menu',
@@ -126,88 +134,84 @@
                 } );
                         */
 
-						echo app( 'BaseCms' )->nav_menu( [
-							'theme_location' => 'header-menu',
-							'walker' => new  \Corp\Themes\RentIt\Classes\MenuWalker(),
-							'echo' => false
-						] );
+                                echo app('BaseCms')->nav_menu([
+                                    'theme_location' => 'header-menu',
+                                    'walker' => new  \Corp\Themes\RentIt\Classes\MenuWalker(),
+                                    'echo' => false
+                                ]);
 
-						?>
+                                ?>
 
-                        <!-- /navigation menu -->
+                                <!-- /navigation menu -->
 
-                            @if(getOption('LANG') && $langs = getOption('custom_langs'))
+                                @if(getOption('LANG') && $langs = getOption('custom_langs'))
 
 
 
-								<?php
+                                <?php
 
-								if ( isset( $langs->code ) && isset( $langs->name ) ){
-								$langs = array_combine( $langs->code, $langs->name );
+                                if (isset($langs->code) && isset($langs->name)) {
+                                    $langs = array_combine($langs->code, $langs->name);
 
-							
-								?>
-                                <div class="entry language">
-                                    <div class="title"><b>
-                                            @if(isset($langs[App::getLocale()]))
+
+                                ?>
+                                    <div class="entry language">
+                                        <div class="title"><b>
+                                                @if(isset($langs[App::getLocale()]))
                                                 {{ $langs[App::getLocale()]}}
-                                            @else
+                                                @else
                                                 {{App::getLocale()}}
-                                            @endif
+                                                @endif
 
-                                        </b></div>
-                                    <div class="language-toggle header-toggle-animation">
+                                            </b></div>
+                                        <div class="language-toggle header-toggle-animation">
 
-                                        @foreach($langs as $k => $v)
+                                            @foreach($langs as $k => $v)
 
-                                            <a href="{{ route( 'setlocale', [ 'lang' => $k] )}}"><span
-                                                        class="flag-icon flag-icon-ru"></span> {{$v}} </a>
+                                            <a href="{{ route( 'setlocale', [ 'lang' => $k] )}}"><span class="flag-icon flag-icon-ru"></span> {{$v}} </a>
 
-                                        @endforeach
+                                            @endforeach
 
+                                        </div>
                                     </div>
-                                </div>
-								<?php  } ?>
-                            @endif
-                        </div>
+                                <?php  } ?>
+                                @endif
+                            </div>
 
-                    </div>
-                    <!-- Add Scroll Bar -->
-                    <div class="swiper-scrollbar"></div>
-                </nav>
-                <!-- /Navigation -->
+                        </div>
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </nav>
+                    <!-- /Navigation -->
+
+                </div>
+
 
             </div>
 
-
-        </div>
-
-    </header>
-    <!-- /HEADER -->
-
-</div>
-
-
-
-<?php  if(Auth::user() && 1 > 2){ ?>
-<div id="themeConfig" class="theme-config  active" style="right: 0px;">
-    <h4 class="theme-config-head">{{__('User Account')}}<a href="#"><i class="fa   fa-user"></i></a></h4>
-    <div class="theme-config-wrap">
-
-        <ul class="options colors" data-type="colors">
-            <li class="user-auth-box">
-                {{ __('Hi, :name', ['name' =>Auth::user()->name ]  )}}
-
-                <a
-                        href="{{route('MyAccount')}}">{{__('My bookings')}}</a>
-                <a
-                        href="{{route('MyAccountEdit')}}">{{__('Edit account')}}</a>
-                <a class="ab-item"
-                   href="{{route('logout')}}">{{__('admin.Log Out')}}</a>
-            </li>
-
-        </ul>
+        </header>
+        <!-- /HEADER -->
 
     </div>
-</div>
-<?php  } ?>
+
+
+
+    <?php if (Auth::user() && 1 > 2) { ?>
+        <div id="themeConfig" class="theme-config  active" style="right: 0px;">
+            <h4 class="theme-config-head">{{__('User Account')}}<a href="#"><i class="fa   fa-user"></i></a></h4>
+            <div class="theme-config-wrap">
+
+                <ul class="options colors" data-type="colors">
+                    <li class="user-auth-box">
+                        {{ __('Hi, :name', ['name' =>Auth::user()->name ]  )}}
+
+                        <a href="{{route('MyAccount')}}">{{__('My bookings')}}</a>
+                        <a href="{{route('MyAccountEdit')}}">{{__('Edit account')}}</a>
+                        <a class="ab-item" href="{{route('logout')}}">{{__('admin.Log Out')}}</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    <?php  } ?>
