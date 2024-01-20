@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{app()->getLocale()}}">
-
 <head>
     <meta charset="utf-8">
     <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="{{$description ?? ''}}" />
-    <meta name="keywords" content="{{$keywords ?? ''}}" />
+    <meta name="description" content="{{$description ?? ''}}"/>
+    <meta name="keywords" content="{{$keywords ?? ''}}"/>
     <title>{{$title ?? ''}}</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
-
     <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon.ico">
     <script src="https://kit.fontawesome.com/e5bcd3075c.js" crossorigin="anonymous"></script>
     
     {!! $lr_header ?? '' !!}
     <style>
-
         .header *{
             background-color:#1D3F6E !important;
             color:white !important;
@@ -65,23 +61,15 @@
             width: 100%;
         }
         
-
         .is-sticky .logo {
-
-            line-height: auto !important;
+   
+        line-height: auto !important;
 
         }
-
-        .is-sticky .sf-menu .sf-with-ul:after {
-            right: 0.2em;
+        .is-sticky .sf-menu .sf-with-ul:after
+        {
+            right:0.2em;
         }
-
-        .top-bar {
-            background-color: #333333;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
         .top-bar{
 			background-color: black;
 			display: flex;
@@ -94,6 +82,10 @@
             padding:3px;
 		}
         @media screen and (max-width: 429px) {
+            .header .nav{
+                display:flex;
+                justify-content:center;
+            }
             .navigation-bar .menu-icon {
             display:flex;
             flex-direction:column;
@@ -166,7 +158,7 @@
         }
 		}
         @media screen and (min-width: 992px) {
-            .nav>li>a {
+            .nav.sf-menu>li>a {
             padding: 28px 15px 28px 35px !important;
             font-size: 13px !important;
         }
@@ -189,6 +181,7 @@
         .header .nav{
             transition:width 0.3s ease-out;
             flex:1;
+
         }
         .m_logo img{
             width:100%;
@@ -205,6 +198,7 @@
             margin:2px;
             top:0;
             position:relative;
+            
         }
         .navigation-bar .hamburger span{
             transition:top  0.3s 0.3s, transform 0.3s 0s;
@@ -220,13 +214,6 @@
         .navigation-bar .cross #line1{
             transform: rotate(45deg);
             top:9px ;
-
-
-        .top-bar span {
-            color: white;
-            font-size: 12px;
-            font-family: "Open Sans";
-        }
 
 
         }
@@ -251,7 +238,6 @@
         }
 
             
-
     </style>
       <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -274,10 +260,9 @@
         });
     </script>
 </head>
-
 <body id="home" class="wide @if(isAdminBarVisible())) adminbar @endif">
 
-    @if(get_theme_mod('rentit_enable_preloader',1))
+@if(get_theme_mod('rentit_enable_preloader',1))
     <!-- PRELOADER -->
     <div id="preloader">
         <div id="preloader-status">
@@ -292,7 +277,6 @@
         </div>
     </div>
     <!-- /PRELOADER -->
-
 @endif
 <!-- WRAPPER -->
 <div class="wrapper">
@@ -327,7 +311,6 @@
                 <!-- navigation menu -->
 						<?php
 						/*
-
                 echo cache()->rememberForever( 'header-menu', function () {
                     return app( 'BaseCms' )->nav_menu( [
                         'theme_location' => 'header-menu',
@@ -337,15 +320,14 @@
                 } );
                         */
 
-                                echo app('BaseCms')->nav_menu([
-                                    'theme_location' => 'header-menu',
-                                    'walker' => new  \Corp\Themes\RentIt\Classes\MenuWalker(),
-                                    'echo' => false
-                                ]);
+						echo app( 'BaseCms' )->nav_menu( [
+							'theme_location' => 'header-menu',
+							'walker' => new  \Corp\Themes\RentIt\Classes\MenuWalker(),
+							'echo' => false
+						] );
 
-                                ?>
+						?>
 
-                                <!-- /navigation menu -->
 
                     <!-- Add Scroll Bar -->
                     <div class ="contact-number">
@@ -367,17 +349,15 @@
                 </nav>
                 <!-- /Navigation -->
 
-
-                </div>
-
-
             </div>
 
-        </header>
-        <!-- /HEADER -->
 
-    </div>
+        </div>
 
+    </header>
+    <!-- /HEADER -->
+
+</div>
 
 
 
@@ -386,18 +366,20 @@
     <h4 class="theme-config-head">{{__('User Account')}}<a href="#"><i class="fa   fa-user"></i></a></h4>
     <div class="theme-config-wrap">
 
+        <ul class="options colors" data-type="colors">
+            <li class="user-auth-box">
+                {{ __('Hi, :name', ['name' =>Auth::user()->name ]  )}}
 
-                <ul class="options colors" data-type="colors">
-                    <li class="user-auth-box">
-                        {{ __('Hi, :name', ['name' =>Auth::user()->name ]  )}}
+                <a
+                        href="{{route('MyAccount')}}">{{__('My bookings')}}</a>
+                <a
+                        href="{{route('MyAccountEdit')}}">{{__('Edit account')}}</a>
+                <a class="ab-item"
+                   href="{{route('logout')}}">{{__('admin.Log Out')}}</a>
+            </li>
 
-                        <a href="{{route('MyAccount')}}">{{__('My bookings')}}</a>
-                        <a href="{{route('MyAccountEdit')}}">{{__('Edit account')}}</a>
-                        <a class="ab-item" href="{{route('logout')}}">{{__('admin.Log Out')}}</a>
-                    </li>
+        </ul>
 
-                </ul>
-
-            </div>
-        </div>
-    <?php  } ?>
+    </div>
+</div>
+<?php  } ?>
