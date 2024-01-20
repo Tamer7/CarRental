@@ -20,6 +20,9 @@
     
     {!! $lr_header ?? '' !!}
     <style>
+         body *{
+            font-family: 'Montserrat', sans-serif;  
+        }
         .header *{
             background-color:#1D3F6E !important;
             color:white !important;
