@@ -219,7 +219,7 @@
   }
 
   .slider_container .slide {
-    padding: 2vw 0 5vw 10vw;
+    padding: 2vw 0 5vw 22vw;
     position: absolute;
     height:inherit;
     left: 0;
@@ -318,11 +318,19 @@
   .btn_container span {
     background-color: grey;
     border: 2px solid white;
-    padding: 0 7px;
-    border-radius: 50%;
+    display:inline-block;
+    /* padding: 0 7px;
     margin: 2px;
-    height: 0px;
-  }
+    height: 0px; */
+    border-radius: 50%;
+
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+    background-color: transparent;
+    border: solid 3px #a5abb7;
+}
+  
 
   .btn_container span:hover {
     background-color: white;
@@ -336,7 +344,7 @@
   }
   @media screen and  (max-width: 280px) {
     .slider_container .slide {
-    padding-left: 4vw 0 4vw 2vw !important ;
+    padding: 4vw 0 4vw 2vw !important ;
   }
   .slider_container .action_buttons{
     display:flex;
@@ -370,7 +378,7 @@
  /* Styles for screens up to 767px width */
 @media screen and (min-width: 281px) and (max-width: 767px) {
   .slider_container .slide {
-    padding-left: 4vw 0 4vw 2vw !important ;
+    padding: 4vw 0 4vw 4vw !important ;
   }
 
   .slider_container {
@@ -390,6 +398,9 @@
 
 /* Styles for screens between 768px and 991px width */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .slider_container .slide {
+    padding: 4vw 0 4vw 15vw !important ;
+  }
   .slider_container {
     height: 300px;
   }
@@ -398,6 +409,9 @@
 
 /* Styles for screens 992px and wider */
 @media screen and (min-width: 992px) {
+    .slider_container .slide {
+    padding: 2vw 0 4vw 22vw !important ;
+  }
   .slider_container {
     height: 300px;
   }
