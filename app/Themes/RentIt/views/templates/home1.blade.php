@@ -1,4 +1,6 @@
+
 <!-- PAGE -->
+
 <section class="page-section no-padding slider">
     <div class="container full-width">
 
@@ -188,6 +190,297 @@
 </section>
 <!-- /PAGE -->
 
+<style>
+  .n_slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider_container {
+    display: flex;
+  }
+
+  .slider_container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .slider_container h1 {
+    color: black;
+  }
+
+  /* .slider_container #slide1 h1,
+  .slider_container #slide1 h3 {
+    color: white !important;
+  } */
+  .slider_container .slide  h3{
+    margin-bottom:20px;
+  }
+
+  .slider_container .slide {
+    padding: 2vw 0 5vw 10vw;
+    position: absolute;
+    height:inherit;
+    left: 0;
+    min-width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index:1;
+  }
+  .slider_container #slide1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Adjust the alpha value (0.5 in this case) for opacity */
+    z-index: -1;
+}
+  .slider_container #slide1 {
+    background: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (0.5 in this case) for opacity */
+    background-image:url('https://goldenlease.ae/wp-content/uploads/2023/11/goldenlease-monthly-car-rental-in-dubai-2.webp');
+    background-size: cover;
+    background-position:center;
+
+  }
+  .slider_container #slide2 {
+    background-image:url('https://goldenlease.ae/wp-content/uploads/2023/11/goldenlease-monthly-car-rental-in-dubai-long-term-2.webp');
+    background-size: cover;
+    background-position:center;
+  }
+  .slider_container #slide3 {
+    background-image:url('https://goldenlease.ae/wp-content/uploads/2023/11/goldenlease-car-rental-extra-services-2.webp');
+    background-size: cover;
+    background-position:center;
+
+
+  }
+  .slider_container .slide.active {
+    opacity: 1;
+    z-index: 9;
+  }
+
+  .slide_content {
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    top: 70px;
+    left: 20vw;
+  }
+
+  .whatsapp_btn {
+    background-color: green;
+    border-radius: 25px;
+    padding: 15px 28px;
+    margin-right:20px;
+    margin-top:20px;
+    color: white !important;
+  }
+
+  .whatsapp_btn:hover {
+    color: green;
+    font-weight: bold;
+  }
+
+  .call_btn {
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px 28px;
+    margin: 20px 20px 0 0;
+    color: white !important;
+  }
+
+  .call_btn:hover {
+    color: black !important;
+    background-color: white;
+  }
+
+  .slide_img img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .btn_container {
+    position: relative;
+    top:85%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    z-index:100;
+  }
+
+  .btn_container span {
+    background-color: grey;
+    border: 2px solid white;
+    padding: 0 7px;
+    border-radius: 50%;
+    margin: 2px;
+    height: 0px;
+  }
+
+  .btn_container span:hover {
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+  .btn_container .active_btn {
+    background-color: white !important;
+    border: 2px solid black !important;
+  }
+  @media screen and  (max-width: 280px) {
+    .slider_container .slide {
+    padding-left: 4vw 0 4vw 2vw !important ;
+  }
+  .slider_container .action_buttons{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding-left:20px !important;
+
+  }
+  .slider_container .action_buttons *{
+    width:fit-content !important;
+  }
+
+  .slider_container {
+    height: 500px;
+  }
+  .slider_container .whatsapp_btn{
+    padding: 15px 16px !important;
+    min-width:130px;
+    
+  }
+   .slider_container .call_btn {
+    padding: 15px 16px !important;
+    min-width:130px;
+  }
+  .btn_container {
+    top:94% !important;
+  }
+
+
+}
+ /* Styles for screens up to 767px width */
+@media screen and (min-width: 281px) and (max-width: 767px) {
+  .slider_container .slide {
+    padding-left: 4vw 0 4vw 2vw !important ;
+  }
+
+  .slider_container {
+    height: 320px;
+  }
+  .slider_container .whatsapp_btn{
+    padding: 15px 16px !important;
+    
+  }
+   .slider_container .call_btn {
+    padding: 15px 16px !important;
+  }
+
+  
+}
+
+
+/* Styles for screens between 768px and 991px width */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .slider_container {
+    height: 300px;
+  }
+  
+}
+
+/* Styles for screens 992px and wider */
+@media screen and (min-width: 992px) {
+  .slider_container {
+    height: 300px;
+  }
+  .docs_info .first-col
+  {
+    border-right:2px solid black;
+  }
+}
+
+
+</style>
+
+<section class="n_slider">
+  <div class="slider_container">
+    <div class="slide active" id="slide1">
+        <h1>FOR TEACHER </h1>
+        <h3>55,000 km monthly instead of 4,000, 800 deposit <br> 5,000 km monthly instead of 4,000, 800 deposit</h3>
+        <div class ="action_buttons">
+          <a class="call_btn" href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>CALL NOW</span>
+          </a>
+          <a class="whatsapp_btn" href="">
+          <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+          </a>
+      </div>
+    </div>
+    <div class="slide" id= "slide2">
+        <h1>New in Dubai </h1>
+        <h3>Accept New Driving license, <br> 1000 deposit for monthly rent <br> instead of 1500 for new driving license. </h3>
+        <div class ="action_buttons">
+          <a class="call_btn" href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>CALL NOW</span>
+          </a>
+          <a class="whatsapp_btn" href="">
+          <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+          </a>
+        </div>
+    </div>
+    <div class="slide" id ="slide3">
+        <h1>LONG TERM</h1>
+        <h3>Special offers & prices upon request. </h3>
+        <div class ="action_buttons" >
+          <a class="call_btn" href="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>CALL NOW</span>
+          </a>
+          <a class="whatsapp_btn" href="">
+          <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+          </a>
+        </div>
+    </div>
+    <div class="btn_container">
+      <span class="slide_btn active_btn" onclick="showImage(0)"></span>
+      <span class="slide_btn" onclick="showImage(1)"></span>
+      <span class="slide_btn" onclick="showImage(2)"></span>
+    </div>
+  </div>
+</section>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let count = 0;
+
+  function showImage(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    const buttons = document.querySelectorAll('.slide_btn');
+    const active_btn = document.querySelector('.active_btn');
+    slides[index].classList.add('active');
+    buttons[index].classList.add('active_btn');
+    active_btn.classList.remove('active_btn');
+  }
+
+  setInterval(() => {
+    count = (count + 1) % slides.length;
+    showImage(count);
+  }, 5000); // Change slide every 6 seconds
+</script>
+
 <section class="page-section">
     <div class="container">
 
@@ -304,27 +597,33 @@
 <!-- /PAGE -->
 
 
-<section class="page-section" style="padding: 20px; font-family: Arial, sans-serif;">
-    <div class="container">
+<section class="page-section" style="padding: 20px 30px; font-family: Arial, sans-serif;">
+    <div class="container docs_info">
 
         <h2 class="section-title" style="text-align: center; font-weight: bold; margin-bottom: 30px; color: #333;">
             WHAT DOCUMENTS ARE REQUIRED TO RENT A CAR IN DUBAI?
         </h2>
 
-        <p style="text-align:center;">The following documents are required for booking or making reservations for car rental services for people residing in the UAE.</p>
+        <p style="text-align:left;">The following documents are required for booking or making reservations for car rental services for people residing in the UAE.</p>
 
         <div class="row" style="margin-bottom: 10px;text-align:center;">
-            <div class="col-md-6">
-                <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For UAE Residents</h3>
-                <ul style="list-style: none; padding: 0; color: #555;">
+            <div class="col-md-6 first-col" >
+               <div style ="display:flex; align-items:end;">
+                    <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For UAE Residents</h3>
+                    <hr style ="flex:1; margin-left:5px">
+                </div>
+                <ul style="list-style: disc; padding: 0; color: #555; text-align:left; margin-left:25px;">
                     <li>Passport copy</li>
                     <li>Valid UAE driving license</li>
                     <li>Copy of Emirates ID</li>
                 </ul>
             </div>
             <div class="col-md-6" style="text-align:center;">
-                <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For Tourists visiting UAE</h3>
-                <ul style="list-style: none; padding: 0; color: #555;">
+                <div style ="display:flex; align-items:end;">
+                    <h3 style="font-size: 18px; color: #333; margin-bottom: 10px; font-weight:bold;">For Tourists visiting UAE</h3>
+                    <hr style ="flex:1; margin-left:5px";>
+                </div>
+                <ul style="list-style: disc; padding: 0; color: #555;  text-align:left; margin-left:25px;">
                     <li>Passport copy</li>
                     <li>Valid International driving license</li>
                     <li>Copy of Visit Visa/ Visa stamp</li>
@@ -333,7 +632,7 @@
         </div>
 
         <div class="row" style="margin-top: 20px;">
-    <div class="col-md-11 col-md-offset-1" style="background-color: #FFC107; text-align: center; padding: 10px; color: #333; font-weight:bold; border-radius:10px; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,.2);">
+    <div class="col-md-12 " style="background-color: #FFC107; text-align: center; padding: 10px; color: #333; font-weight:bold; border-radius:10px; font-size: 14px; box-shadow: 0 2px 4px rgba(0,0,0,.2);">
         Visitors from European / GCC Countries can drive on their home country driving license (when on Visit Visa)
     </div>
 </div>
@@ -439,58 +738,7 @@
 <!-- /PAGE -->
 
 <!-- PAGE -->
-<section class="page-section dark">
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms">
-                <h2 class="section-title text-left">
-
-                    <span>{{__('GoldenLease - Not The Average Car Rental Company')}}</span>
-                </h2>
-                <p>
-                Welcome to Golden Lease Rent a Car – your premier choice for Affordable Car Rentals in Dubai. Our extensive fleet offers a variety of vehicles, from compact cars to SUVs and vans, providing excellent options for exploring Dubai. Our dedicated team in Dubai ensures a seamless rental experience.
-                </p>
-                <p>
-                In addition to standard car rentals, we offer services like GPS navigation, car seats, and roadside assistance, catering to your needs in Dubai. At Golden Lease Rent a Car, safety is a priority, with all Dubai-based vehicles undergoing rigorous inspection.
-                </p>
-                <p>
-                Choose us as your trusted partner for car rentals in Dubai. Your journey begins with Golden Lease Rent a Car – where quality meets affordability in the heart of Dubai.
-                            </p>
-                <p class="btn-row">
-                    <a href="#"
-                       class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Our Company")}}</a>
-                </p>
-            </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="owl-carousel img-carousel">
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1-775x500x1.webp"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1.webp"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                    <div class="item"><a
-                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                data-gal="prettyPhoto"><img class="img-responsive"
-                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
-                                                            alt=""/></a></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- /PAGE -->
 
 <!-- PAGE -->
 
@@ -1030,15 +1278,63 @@
 </section>
 <!-- /PAGE -->
 
+<section class="page-section dark" style ="background-color:#273f44 !important; ">
+    <div class="container" style ="background-color:#273f44 !important; ">
 
+        <div class="row">
+            <div class="col-md-6 col-lg-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="100ms" style="margin-top:28px ">
+                <h3 class="section-title ;  ">
 
+                    <span style ="text-align:left;">{{__('GoldenLease - Not The Average Car Rental Company')}}</span>
+                </h3>
+                <p style = "color:white;">
+                Welcome to Golden Lease Rent a Car – your premier choice for Affordable Car Rentals in Dubai. Our extensive fleet offers a variety of vehicles, from compact cars to SUVs and vans, providing excellent options for exploring Dubai. Our dedicated team in Dubai ensures a seamless rental experience.
+                </p>
+                <p style = "color:white;" >
+                In addition to standard car rentals, we offer services like GPS navigation, car seats, and roadside assistance, catering to your needs in Dubai. At Golden Lease Rent a Car, safety is a priority, with all Dubai-based vehicles undergoing rigorous inspection.
+                </p>
+                <p style = "color:white;" >
+                Choose us as your trusted partner for car rentals in Dubai. Your journey begins with Golden Lease Rent a Car – where quality meets affordability in the heart of Dubai.
+                            </p>
+                <p class="btn-row">
+                    <a   style ="background-color:#f0c540; border-radius:5px; border:none;" href="#"
+                       class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Our Company")}}</a>
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
+                <div class="owl-carousel img-carousel">
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1-775x500x1.webp"
+                                data-gal="prettyPhoto"><img style ="border-radius:10px;" class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide1.webp"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img style ="border-radius:10px;" class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img style ="border-radius:10px;" class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                    <div class="item"><a
+                                href="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                data-gal="prettyPhoto"><img style ="border-radius:10px;" class="img-responsive"
+                                                            src="{{ asset(config('settings.theme')) }}/assets/img/preview/slider/slide-775x500x1.jpg"
+                                                            alt=""/></a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 <!-- /PAGE -->
-
-<!-- PAGE -->
+<!-- /PAGE -->
+<!--
 <section class="page-section contact dark">
     <div class="container">
 
-        <!-- Get in touch -->
 
         <h2 class="section-title wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
             <small>Feel Free to Say Hello!</small>
@@ -1047,7 +1343,6 @@
 
         <div class="row">
             <div class="col-md-6 wow fadeInLeft" data-wow-offset="200" data-wow-delay="200ms">
-                <!-- Contact form -->
                 <form name="contact-form" method="post" action="#" class="contact-form" id="contact-form">
 
                     <div class="row">
@@ -1110,7 +1405,6 @@
                     </div>
 
                 </form>
-                <!-- /Contact form -->
             </div>
             <div class="col-md-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="200ms">
 
@@ -1146,8 +1440,7 @@
             </div>
         </div>
 
-        <!-- /Get in touch -->
-
+]
     </div>
 </section>
-
+ -->
