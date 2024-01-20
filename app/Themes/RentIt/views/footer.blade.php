@@ -1,13 +1,28 @@
 <footer class="footer">
 <style>
-     .social-links i{
-			background: goldenrod;
-			border-radius: 50%;
-			padding:5px;
-		}
-		.footer-meta{
-			background-color:#23393d !important;
-		}
+    .social-links{
+        display:flex;
+        justify-content:end;
+        align-items:center;
+    }
+    .social-links i{
+    color:goldenrod;
+        margin-right:16px;
+
+    }
+    .social-links :nth-child(1){
+        padding:5px 7px;
+    }
+    .footer-meta{
+        background-color:#23393d !important;
+    }
+    .footer-meta .copyright{
+        flex:1;
+        text-align:left;
+    }
+    
+    
+        
 </style>
 
     @if(!isset($hide_widgets) || $hide_widgets == false )
@@ -34,9 +49,9 @@
                        <span>Copyright © 2023 - Aspiration Marketers</span>
                     </div>
                     <div class="social-links">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
 
                     </div>
                     
