@@ -7,7 +7,9 @@
 		.container {
 			/* font-family: Open Sans, Arial; */
 		}
-
+		.container .breadcrumb-section h1{
+			color:white !important;
+		}
 		.container h1,
 		.container h2,
 		.container h3,
