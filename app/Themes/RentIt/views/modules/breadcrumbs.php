@@ -6,8 +6,9 @@
     }
 
     .title-section {
-        color: #fff;
+        color: #fff !important;
         font-weight: bold;
+        /* font-family: 'Montserrat, Arial'; */
     }
 </style>
 

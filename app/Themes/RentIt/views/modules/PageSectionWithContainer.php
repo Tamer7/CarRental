@@ -110,7 +110,7 @@
 		<div class="content-main  row">
 			<div class="welcome-section">
 				<div class="first-column col-md-6">
-					<img src="	http://127.0.0.1/CarRental-master/public/uploads/2024/01/07/goldenlease-logo-2-3.png"
+					<img src="<?php echo asset(config('settings.theme')) ?>/assets/img/preview/team/goldenlease-logo-2-3.png"
 						alt="" max-width="100%">
 				</div>
 				<div class="second-column col-md-6">
@@ -189,7 +189,7 @@
 				</li>
 				<li class="col-md-6 ">
 					<div class="icon">
-						<i class="fa fa-money" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
 					</div>
 					<div class="content">
 						<h4>Wide Selection of Vehicles</h4>
@@ -200,7 +200,7 @@
 				</li>
 				<li class="col-md-6">
 					<div class="icon">
-						<i class="fa fa-money" aria-hidden="true"></i>
+						<i class="fa fa-car" aria-hidden="true"></i>
 					</div>
 					<div class="content">
 						<h4>Reliable and Safe Vehicles</h4>
@@ -211,7 +211,7 @@
 				</li>
 				<li class="col-md-6">
 					<div class="icon">
-						<i class="fa fa-money" aria-hidden="true"></i>
+						<i class="fa fa-road" aria-hidden="true"></i>
 					</div>
 					<div class="content">
 						<h4>Roadside Assistance</h4>
@@ -221,7 +221,7 @@
 				</li>
 				<li class="col-md-6">
 					<div class="icon">
-						<i class="fa fa-money" aria-hidden="true"></i>
+						<i class="fa fa-headphones" aria-hidden="true"></i>
 					</div>
 					<div class="content">
 						<h4>Exceptional Customer Service</h4>
