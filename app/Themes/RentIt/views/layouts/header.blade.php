@@ -20,6 +20,9 @@
     
     {!! $lr_header ?? '' !!}
     <style>
+         body *{
+            font-family: 'Montserrat', sans-serif;  
+        }
         .header *{
             background-color:#1D3F6E !important;
             color:white !important;
@@ -82,10 +85,7 @@
             padding:3px;
 		}
         @media screen and (max-width: 429px) {
-            .header .nav{
-                display:flex;
-                justify-content:center;
-            }
+           
             .navigation-bar .menu-icon {
             display:flex;
             flex-direction:column;
@@ -158,7 +158,11 @@
         }
 		}
         @media screen and (min-width: 992px) {
-            .nav.sf-menu>li>a {
+            .header .nav.sf-menu {
+                display:flex;
+                justify-content:space-between;
+            }
+            .nav.sf-menu >li>a {
             padding: 28px 15px 28px 35px !important;
             font-size: 13px !important;
         }
@@ -198,7 +202,6 @@
             margin:2px;
             top:0;
             position:relative;
-            
         }
         .navigation-bar .hamburger span{
             transition:top  0.3s 0.3s, transform 0.3s 0s;
