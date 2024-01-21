@@ -865,14 +865,14 @@
                 <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
                     <!-- faq1 -->
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading1">
+                        <div class="panel-heading" role="tab" id="heading2">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    <span class="dot"></span> What's the Total Cost of the Rental?
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <span class="dot"></span>What's the Total Cost of the Rental?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                             <div class="panel-body">
                             Each car has its special rates depending on type, model, features, and the duration (Daily, weekly, Monthly), in addition customers must pay one-time refundable deposit.
                             </div>
@@ -964,21 +964,22 @@
                     <!-- /faq1 -->
                     <!-- faq2 -->
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading22">
+                        <div class="panel-heading" role="tab" id="heading23">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse22" aria-expanded="true" aria-controls="collapse22">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
                                     <span class="dot"></span> How can I upgrade to full protection insurance?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
+                        <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
                             <div class="panel-body">
-                            We offer same insurance for all customers, damages responsibilities divided into two cases as below:
-                            1. If the Accident is your fault or unknown damage, you must pay 1500/- DHS for the accident excess charge and police report (1,050 for insurance claim + 450 police report).
+                            We offer same insurance for all customers, damages responsibilities divided into two cases as below: <br>
+                            1. If the Accident is your fault or unknown damage, you must pay 1500/- DHS for the accident excess charge and police report (1,050 for insurance claim + 450 police report). <br>
                             2. If the Accident is not your fault, you don’t have to pay anything.
                             </div>
                         </div>
                     </div>
+
                     <!-- /faq2 -->
                     <!-- faq3 -->
                     <div class="panel panel-default">
