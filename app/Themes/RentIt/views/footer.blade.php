@@ -49,9 +49,15 @@
                        <span>Copyright © 2023 - Aspiration Marketers</span>
                     </div>
                     <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100071530377082&mibextid=LQQJ4d" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/goldenlease.ae?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/message/EED5R6GPKGDII1" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
 
                     </div>
                     

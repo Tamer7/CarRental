@@ -311,7 +311,9 @@
 <!-- WRAPPER -->
 <div class="wrapper">
     <div class="top-bar">
-        <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
+        <a href="tel:+971586887706">
+            <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
+        </a>
         <span><i class="fa fa-map-marker" aria-hidden="true"></i> AL SERKAL - 801, 8TH FLOOR - BUILDING 2 17 19B STREET - PORT SAEED - DUBAI - UNITED ARAB EMIRATES</span>
         <span><i class="fa fa-clock-o" aria-hidden="true"></i> MON - SAT 8.00 - 18.00</span>
     </div>
@@ -362,7 +364,10 @@
                     <!-- Add Scroll Bar -->
                     <div class ="contact-number">
                         <a href="">
-                    <span> <i class="fa fa-phone" aria-hidden="true"></i> <span>+971 586 887 706</span> </span>
+                        <a href="tel:+971586887706">
+    <span> <i class="fa fa-phone" aria-hidden="true"></i> <span>+971 586 887 706</span> </span>
+</a>
+
                     </a>
                     </div>
                     <div class="swiper-scrollbar"></div>
