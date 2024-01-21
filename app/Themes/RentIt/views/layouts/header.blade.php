@@ -76,13 +76,14 @@
         .top-bar{
 			background-color: black;
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: center;
 		}
 		.top-bar span{
 			color:white;
 			font-size: 12px;
 			font-family: "Open Sans";
             padding:3px;
+            margin-right:20px;
 		}
         @media screen and (max-width: 429px) {
            
@@ -121,6 +122,9 @@
         .header .contact-number span span{
             display:none !important;
         }
+         .nav.sf-menu >li>a:hover{
+            background-color:#23393d !important;
+        }
         }
 		@media screen and (min-width: 430px) and (max-width: 991px) {
         
@@ -156,12 +160,12 @@
         .m_logo{
             width:30%;
         }
+        .nav.sf-menu >li>a:hover{
+            background-color:#23393d !important;
+        }
 		}
-        @media screen and (min-width: 992px) {
-            .header .nav.sf-menu {
-                display:flex;
-                justify-content:space-between;
-            }
+        @media screen and (min-width: 992px) and (max-width: 1250px) {
+            
             .nav.sf-menu >li>a {
             padding: 28px 15px 28px 35px !important;
             font-size: 13px !important;
@@ -176,6 +180,29 @@
            
             .m_logo {
             width:20%;
+            }
+        }
+        @media screen and (min-width: 1251px) {
+            .header .nav.sf-menu {
+                display:flex;
+                justify-content:space-between;
+                max-width:800px;
+            }
+            .nav.sf-menu >li>a {
+            padding: 28px 15px 28px 35px !important;
+            font-size: 13px !important;
+        }
+            .is-sticky .sf-menu.nav>li>a{
+            padding: 28px 15px 28px 35px !important;
+            font-size:13px !important;
+        }
+            .menu-icon{
+                display:none;
+            }
+           
+            .navigation-bar
+            {
+                justify-content:center !important;
             }
         }
         .sticky-wrapper{
@@ -239,7 +266,7 @@
         .sf-menu ul {
             display:none !important;
         }
-
+       
             
     </style>
       <script>
