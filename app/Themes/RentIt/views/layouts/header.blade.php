@@ -8,14 +8,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="{{$description ?? ''}}"/>
     <meta name="keywords" content="{{$keywords ?? ''}}"/>
-    <title>{{$title ?? ''}}</title>
+    <title>Home | Goldenlease Car Rental Dubai</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/e5bcd3075c.js" crossorigin="anonymous"></script>
     
     {!! $lr_header ?? '' !!}

@@ -6,35 +6,35 @@
 			<div class="edit col-md-4">
 				<div class="edit contact-info">
 
-					<h2 class="edit block-title"><span>Contact Us</span></h2>
+					<h2 class="edit block-title"><span>Deira, Dubai</span></h2>
 
 					<div class="edit media-list">
 						<div class="edit media">
 							<i class="edit pull-left fa fa-home"></i>
 							<div class="edit media-body">
 								<strong>Address:</strong><br>
-								987 Main st. New York, NY, 00001, U.S.A
+ 									#801, 8TH FLOOR, AL SERKAL BUILDING 2, 17 19B STREET – PORT SAEED, DUBAI
 							</div>
 						</div>
 						<div class="edit media">
 							<i class="edit pull-left fa fa-phone"></i>
 							<div class="edit media-body">
 								<strong>Telephone:</strong><br>
-								(012) 345-7689
+								+971 586 887 706
 							</div>
 						</div>
 						<div class="edit media">
 							<i class="edit pull-left fa fa-envelope-o"></i>
 							<div class="edit media-body">
-								<strong>Fax:</strong><br>
-								0123456789
+								<strong>Working hours</strong><br>
+								
+
+									Mon – Sat: 08:00AM – 06:00PM
+									Sunday: Closed
+
 							</div>
 						</div>
-						<div class="edit media">
-							<div class="edit media-body">
-								Phasellus pellentesque purus in massa aenean in pede phasellus libero ac tellus pellentesque semper.
-							</div>
-						</div>
+						
 						<div class="edit media">
 							<div class="edit media-body">
 								<strong>Customer Service:</strong><br>

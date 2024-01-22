@@ -2776,10 +2776,10 @@ input[type=checkbox] {
   }
 }
 .main-slider .slide1 {
-  background-image: url('../img/preview/slider/slide-1.jpg');
+  background-image: url('../img/preview/slider/main_image.png');
 }
 .main-slider .slide2 {
-  background-image: url('../img/preview/slider/slide-1.jpg');
+  background-image: url('../img/preview/slider/main_image.png');
 }
 .main-slider .slide3 {
   background-image: url('../img/preview/slider/slide-2.jpg');
