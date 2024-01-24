@@ -95,6 +95,8 @@ class PageController extends RentItTheme {
 //
 		foreach ( $modules_db as $module ) {
 			//	dump($module->value);
+            if($slug == "faqs" && ($key == 2 || $key == 3))
+			continue;
 			preg_match( '#(\w+)__\d+$#', $module->name, $math );
 			if(isset($math[1])) {
 				$module_ob = new $modules[$math[1]]['path']( $page, $module->value );
