@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
           href="{{ asset(config('settings.theme')) }}/assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="{{ asset(config('settings.theme')) }}/assets/ico/favicon-16x16.png">
-    <script src="https://kit.fontawesome.com/e5bcd3075c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/07b6797bbe.js" crossorigin="anonymous"></script>
     
     {!! $lr_header ?? '' !!}
     <style>
