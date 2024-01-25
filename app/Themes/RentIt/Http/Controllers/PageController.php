@@ -93,9 +93,9 @@ class PageController extends RentItTheme {
 		$modules_db = $page->module()->orderBy( 'sorting', 'asc' )->get();
 		//dump( $modules );
 //
-		foreach ( $modules_db as $module ) {
+		foreach ( $modules_db as $key => $module ) {
 			//	dump($module->value);
-            if($slug == "business-partners" && ($key == 2 || $key == 3))
+            if( $key == 2 && $slug == "business-partners")
 			continue;
 			preg_match( '#(\w+)__\d+$#', $module->name, $math );
 			if(isset($math[1])) {
