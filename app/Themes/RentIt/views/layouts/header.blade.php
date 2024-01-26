@@ -8,6 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="{{$description ?? ''}}"/>
     <meta name="keywords" content="{{$keywords ?? ''}}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Home | Goldenlease Car Rental Dubai</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,17 +77,17 @@
             right:0.2em;
         }
         .top-bar{
-			background-color: black;
+			background-color: #aaaaaa;
 			display: flex;
 			justify-content: center;
 		}
 		.top-bar span{
 			color:white;
 			font-size: 12px;
-			font-family: "Open Sans";
             padding:3px;
             margin-right:20px;
 		}
+        
         @media screen and (max-width: 429px) {
            
             .navigation-bar .menu-icon {
@@ -314,7 +317,7 @@
         <a href="tel:+971586887706">
             <span> <i class="fa fa-phone" aria-hidden="true"></i> +971 586 887 706</span>
         </a>
-        <span><i class="fa fa-map-marker" aria-hidden="true"></i> AL SERKAL - 801, 8TH FLOOR - BUILDING 2 17 19B STREET - PORT SAEED - DUBAI - UNITED ARAB EMIRATES</span>
+        <span><i class="fa fa-map-marker" aria-hidden="true"></i> 7 DAYS FREE DELIVERY ACROSS DUBAI</span>
         <span><i class="fa fa-clock-o" aria-hidden="true"></i> MON - SAT 8.00 - 18.00</span>
     </div>
     <!-- HEADER -->

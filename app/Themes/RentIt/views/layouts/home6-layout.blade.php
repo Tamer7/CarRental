@@ -99,7 +99,6 @@
     </header>
     <!-- /HEADER -->
 {!! $content ?? '' !!}
-    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
 
 </div>
 

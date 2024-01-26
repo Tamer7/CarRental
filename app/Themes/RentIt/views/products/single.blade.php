@@ -469,7 +469,10 @@
                             class="form-control alt"
                             name="phone"
                             type="number"
-                            value="{{old('phone')}}"
+                            id="fd-phone"
+                            data-toggle="tooltip"
+                            value="{{  $errors->has('phone') ?? old('phone')}}"
+                            title="{{__('Phone number is required')}}"
                             placeholder="{{__('Phone Number:')}}">
                 </div>
             </div>

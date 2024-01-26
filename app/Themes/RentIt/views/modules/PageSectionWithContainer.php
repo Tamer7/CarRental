@@ -204,9 +204,8 @@
 					</div>
 					<div class="content">
 						<h4>Reliable and Safe Vehicles</h4>
-						<p>We are committed to maintaining the highest standards of safety and reliability. All of our
-							vehicles are regularly inspected and well-maintained to ensure they are in good working
-							order.</p>
+						<p>We are committed to maintaining the highest standards of safety. All of our
+							vehicles are regularly inspected and well-maintained to ensure they are in good working order.</p>
 					</div>
 				</li>
 				<li class="col-md-6">

@@ -46,7 +46,7 @@
 
                 <div class="col-sm-12" style ="display:flex; justify-content:space-between">
                 <div class="copyright ">
-                       <span>Copyright © 2023 - Aspiration Marketers</span>
+                       <span>Copyright © 2024 - Sourcefull</span>
                     </div>
                     <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=100071530377082&mibextid=LQQJ4d" target="_blank">

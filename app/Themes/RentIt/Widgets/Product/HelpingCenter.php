@@ -112,20 +112,6 @@ class HelpingCenter extends Widgets {
 		?>
 
 
-        <div class="widget shadow widget-helping-center">
-            <h4 class="widget-title"><?php echo $instance['title']; ?></h4>
-            <div class="widget-content">
-                <p><?php echo $instance['text']; ?></p>
-                <h5 class="widget-title-sub"><?php echo $instance['phone']; ?></h5>
-                <p><a href="mailto:<?php echo $instance['email']; ?>"><?php echo $instance['email']; ?></a></p>
-				<?php if ( isset( $instance['button']{1} ) ) { ?>
-                    <div class="button">
-                        <a href="<?php echo $instance['url'] ?>"
-                           class="btn btn-block btn-theme btn-theme-dark"><?php echo $instance['button'] ?></a>
-                    </div>
-				<?php } ?>
-            </div>
-        </div>
 		<?php
 
 	}

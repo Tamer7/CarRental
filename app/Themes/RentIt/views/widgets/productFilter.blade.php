@@ -1,6 +1,4 @@
-<div class="widget shadow widget-find-car">
-    <h4 class="widget-title">{{$title ?? ''}}</h4>
-    <div class="widget-content">
+
         <!-- Search form -->
         <div class="form-search light">
             <form action="{{ route('products.index') }}" method="get">
@@ -140,5 +138,3 @@
             </form>
         </div>
         <!-- /Search form -->
-    </div>
-</div>

@@ -63,15 +63,6 @@ class Testimonials extends Widgets  {
 
 		?>
 
-
-        <div class="widget shadow">
-            <div class="widget-title"><?php  echo $instance['title']; ?></div>
-            <div class="testimonials-carousel">
-                <div class="owl-carousel" id="testimonials">
-                    <?php  echo $instance['text'] ; ?>
-                </div>
-            </div>
-        </div>
 		<?php
 
 	}

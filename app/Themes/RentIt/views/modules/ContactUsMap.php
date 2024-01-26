@@ -3,10 +3,10 @@
     <div class="container full-width">
 
         <!-- Google map -->
-        <div class="google-map">
+        <!-- <div class="google-map">
             <div id="map-canvas"></div>
 
-        </div>
+        </div> -->
         <!-- /Google map -->
 
     </div>

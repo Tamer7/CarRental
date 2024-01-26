@@ -328,6 +328,10 @@
         height: 79% !important;
     }
 
+    .testimonial-text {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
 
     @media screen and (max-width: 280px) {
         .slider_container .slide {
@@ -419,7 +423,52 @@
     }
 </style>
 
-<section class="n_slider">
+<section class="page-section image">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
+                <div class="thumbnail thumbnail-counto no-border no-padding">
+                    <div class="caption">
+                        <div class="caption-icon"><i class="fa fa-heart"></i></div>
+                        <div class="caption-number">{{__("5657")}}</div>
+                        <h4 class="caption-title">{{__("Happy costumers")}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
+                <div class="thumbnail thumbnail-counto no-border no-padding">
+                    <div class="caption">
+                        <div class="caption-icon"><i class="fa fa-car"></i></div>
+                        <div class="caption-number">{{__("657")}}</div>
+                        <h4 class="caption-title">{{__("Total car count")}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
+                <div class="thumbnail thumbnail-counto no-border no-padding">
+                    <div class="caption">
+                        <div class="caption-icon"><i class="fa fa-flag"></i></div>
+                        <div class="caption-number">{{__("1.255.657")}}</div>
+                        <h4 class="caption-title">Total KM/MIL</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
+                <div class="thumbnail thumbnail-counto no-border no-padding">
+                    <div class="caption">
+                        <div class="caption-icon"><i class="fa fa-comments-o"></i></div>
+                        <div class="caption-number">{{__("1255")}}</div>
+                        <h4 class="caption-title">{{__("Call Center Solutions")}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- <section class="n_slider">
     <div class="slider_container">
         <div class="slide active" id="slide1">
             <h1>FOR TEACHER </h1>
@@ -469,7 +518,7 @@
             <span class="slide_btn" onclick="showImage(2)"></span>
         </div>
     </div>
-</section>
+</section> -->
 
 <script>
     const slides = document.querySelectorAll('.slide');
@@ -533,7 +582,7 @@
 
                                         @if(isset($product->img) && $product->img > 0)
 
-                                        <a class="media-link" data-gal="prettyPhoto" href="{{ the_image_url($product->img) }}">
+                                        <a class="media-link" href="{{route('products.show',['products'=> $product->alias ])}}">
                                             <img src="{{ the_image_url($product->img,'thumbnail-370x220') }}" alt="" />
                                             <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
                                         </a>
@@ -804,50 +853,7 @@
 
 
 <!-- PAGE -->
-<section class="page-section image">
-    <div class="container">
 
-        <div class="row">
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="100ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-heart"></i></div>
-                        <div class="caption-number">{{__("5657")}}</div>
-                        <h4 class="caption-title">{{__("Happy costumers")}}</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="200ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-car"></i></div>
-                        <div class="caption-number">{{__("657")}}</div>
-                        <h4 class="caption-title">{{__("Total car count")}}</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="300ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-flag"></i></div>
-                        <div class="caption-number">{{__("1.255.657")}}</div>
-                        <h4 class="caption-title">Total KM/MIL</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
-                <div class="thumbnail thumbnail-counto no-border no-padding">
-                    <div class="caption">
-                        <div class="caption-icon"><i class="fa fa-comments-o"></i></div>
-                        <div class="caption-number">{{__("1255")}}</div>
-                        <h4 class="caption-title">{{__("Call Center Solutions")}}</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 <!-- /PAGE -->
 
 <!-- PAGE -->
@@ -867,12 +873,12 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading2">
                             <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                     <span class="dot"></span>What's the Total Cost of the Rental?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                        <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                             <div class="panel-body">
                             Each car has its special rates depending on type, model, features, and the duration (Daily, weekly, Monthly), in addition customers must pay one-time refundable deposit.
                             </div>
@@ -964,14 +970,14 @@
                     <!-- /faq1 -->
                     <!-- faq2 -->
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading23">
+                        <div class="panel-heading" role="tab" id="heading22">
                             <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
                                     <span class="dot"></span> How can I upgrade to full protection insurance?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+                        <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
                             <div class="panel-body">
                             We offer same insurance for all customers, damages responsibilities divided into two cases as below: <br>
                             1. If the Accident is your fault or unknown damage, you must pay 1500/- DHS for the accident excess charge and police report (1,050 for insurance claim + 450 police report). <br>

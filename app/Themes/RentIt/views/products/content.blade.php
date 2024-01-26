@@ -10,7 +10,7 @@
             <div class="media">
 
                 @if(isset($product->img) && $product->img > 0)
-                    <a class="media-link" href="{{ the_image_url($product->img) }}" data-gal="prettyPhoto">
+                    <a class="media-link" href="{{route('products.show',['products'=> $product->alias ])}}">
                         <img src="{{ the_image_url($product->img,'thumbnail-370x220') }}">
                     </a>
 

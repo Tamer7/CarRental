@@ -98,23 +98,6 @@ class PriceFilter extends Widgets {
 
         }
         ?>
-        <aside id="rentit_price_filter_class-2" class="widget shadow rentit_card-widget
-        widget-filter-price"><h1 class="widget-title"><?php  echo $instance['title']; ?></h1><div class="widget-content">
-                <div class="">
-                    <form action="<?php  echo route('products.index');  ?>" method="get">
-                        <div id="slider-range"></div>
-                        <input data-min="<?php  echo (int)$instance['min']; ?>"
-                               data-max="<?php  echo (int)$instance['max']; ?>"
-                               data-value_min="<?php  echo  $priceRange[0] ??  (int)$instance['min']   ?>"
-                               data-value_max="<?php  echo  $priceRange[1] ??  (int)$instance['max'] ?>"
-                               value="" type="text"
-                               id="amount" readonly />
-                        <input name="price_filter" type="hidden" id="amout_rating" value="">
-                        <button type="submit" class="btn btn-theme btn-theme-dark">
-	                        <?php  echo $instance['button']; ?> </button>
-                    </form>
-                </div>
-            </div></aside>
 <?php
 
 	}

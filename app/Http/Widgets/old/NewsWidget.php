@@ -63,18 +63,6 @@ class  NewsWidget extends Widgets {
 
 
 		?>
-        <div class="widget shadow car-categories">
-            <h4 class="widget-title"><?php echo $instance['title'] ?? ''; ?></h4>
-            <div class="widget-content">
-                <ul>
-					<?php foreach ( $posts as $post ) { ?>
-                        <li><a href="<?php  echo route('posts.show',['alias' => $post->alias]); ?>"><?php  echo $post->title; ?></a></li>
-					<?php } ?>
-
-
-                </ul>
-            </div>
-        </div>
 		<?php
 
 

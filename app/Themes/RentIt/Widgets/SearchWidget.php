@@ -50,15 +50,7 @@ class SearchWidget extends \Corp\Http\Widgets\Widgets {
 
 
 		?>
-        <div class="widget shadow">
-            <div class="widget-search">
-                <form action="<?php  echo route('search'); ?>" method="get">
-                    <input name="s" class="form-control" type="text" placeholder="Search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
 
-            </div>
-        </div>
 		<?php
 
 		return false;
