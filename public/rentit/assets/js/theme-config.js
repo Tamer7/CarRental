@@ -15,7 +15,7 @@ var themeConfig = {
             'colorName': 'gold'
         },
         {
-            'Hex': '#1D3F6E ',
+            'Hex': '#3A386F ',
             'colorName': 'red-1'
         },
         {

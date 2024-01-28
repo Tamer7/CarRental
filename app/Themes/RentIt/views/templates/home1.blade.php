@@ -111,7 +111,7 @@
                                                         </div>
 
                                                         <div class="col-sm-5" style="margin-top:30px; margin-bottom: 20px;">
-                                                            <button style="font-family: Montserrat, Arial; background-color:#273f44; border-color:#273f44 !important;" type="submit" id="formSearchSubmit2" class="btn btn-theme ripple-effect pull-right">{{__("Find A Vehicle")}}</button>
+                                                            <button style="font-family: Montserrat, Arial; background: linear-gradient(to bottom right, #3A386F 80%, #191726); border-color:#273f44 !important;" type="submit" id="formSearchSubmit2" class="btn btn-theme ripple-effect pull-right">{{__("Find A Vehicle")}}</button>
 
                                                         </div>
 
@@ -306,7 +306,7 @@
     }
 
     .pickup_container {
-        background-color: #F0C540 !important;
+        background: linear-gradient(to bottom right, #B19158, #B19158 70%, #7F5E26) !important;
     }
 
     .car_search_field_label {
@@ -656,7 +656,7 @@
             WHAT DOCUMENTS ARE REQUIRED TO RENT A CAR IN DUBAI?
         </h2>
 
-        <p style="text-align:left;">The following documents are required for booking or making reservations for car rental services for people residing in the UAE.</p>
+        <p style="text-align:center;">The following documents are required for booking or making reservations for car rental services for people residing in the UAE.</p>
 
         <div class="row" style="margin-bottom: 10px;text-align:center;">
             <div class="col-md-6 first-col">
@@ -903,16 +903,16 @@
                     <!-- /faq2 -->
                     <!-- faq3 -->
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading3">
+                        <div class="panel-heading" role="tab" id="heading23">
                             <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    <span class="dot"></span> Is there a Daily Mileage Limit?
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                    <span class="dot"></span> If I’m a UAE resident, can I drive with my home country license?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                        <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
                             <div class="panel-body">
-                            Our daily mileage limit is 150 km per day! Any special millage should be confirmed & approved by our management! Don’t hesitate to ask for!
+                            No, when you are a UAE resident, you must have a valid UAE driving license.
                             </div>
                         </div>
                     </div>
@@ -934,7 +934,7 @@
                         <div class="panel-heading" role="tab" id="heading3">
                             <h4 class="panel-title">
                                 <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    <span class="dot"></span> How many days does it take to get the deposit back?
+                                    <span class="dot"></span> How many working days does it take to get the deposit back?
                                 </a>
                             </h4>
                         </div>
@@ -989,16 +989,16 @@
                     <!-- /faq2 -->
                     <!-- faq3 -->
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading23">
+                        <div class="panel-heading" role="tab" id="heading3">
                             <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
-                                    <span class="dot"></span> If I’m a UAE resident, can I drive with my home country license?
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span class="dot"></span> Is there a Daily Mileage Limit?
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                             <div class="panel-body">
-                            No, when you are a UAE resident, you must have a valid UAE driving license.
+                            Our daily mileage limit is 150 km per day! Any special millage should be confirmed & approved by our management! Don’t hesitate to ask for!
                             </div>
                         </div>
                     </div>
@@ -1058,7 +1058,7 @@
                     Choose us as your trusted partner for car rentals in Dubai. Your journey begins with Golden Lease Rent a Car – where quality meets affordability in the heart of Dubai.
                 </p>
                 <p class="btn-row">
-                    <a style="background-color:#f0c540; border-radius:5px; border:none; color:#273f44!important;" href="/about-us" class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Our Company")}}</a>
+                    <a style="background:linear-gradient(to bottom right, #B19158, #B19158 70%, #7F5E26); border-radius:5px; border:none; color:#273f44!important;" href="/about-us" class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">{{__("Our Company")}}</a>
                 </p>
             </div>
             <div class="col-md-6 col-lg-6 wow fadeInRight" data-wow-offset="200" data-wow-delay="300ms">
@@ -1069,7 +1069,7 @@
     </div>
 </section>
 
-<section class="page-section dark" style="background-color:#f0c540 !important; ">
+<section class="page-section dark" style="background:linear-gradient(to bottom right, #B19158, #B19158 70%, #7F5E26) !important; ">
 
     <div class="container">
         <div class="row">

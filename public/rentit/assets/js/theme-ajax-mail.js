@@ -184,10 +184,17 @@ $(function () {
         });
 
         // Addition Information
-        var fadmessage = $(".form-additional textarea#fad-message").val();
-        if (fadmessage == "" || fdname == "Addition Information") {
-            $(".form-additional textarea#fad-message").tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
-            $(".form-additional textarea#fad-message").focus();
+        var fdPhoneNumber = $(".form-delivery input#fd-phone").val();
+        if (fdPhoneNumber == "") {
+            $(".form-delivery input#fd-phone").tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+            $(".form-delivery input#fd-phone").focus();
+            return false;
+        }
+
+        var dfPickupDate = $(".form-booking_a_car input#formSearchUpDate3").val();
+        if (dfPickupDate == "") {
+            $(".form-booking_a_car input#formSearchUpDate3").tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+            $(".form-booking_a_car input#formSearchUpDate3").focus();
             return false;
         }
 
@@ -199,7 +206,7 @@ $(function () {
             return false;
         }
 
-        var dataString = 'extras=' + fdextras + '' + '&fdmrms=' + fdmrms + '' + '&fdname=' + fdname + '' + '&fdemail=' + fdemail + '' + '&fadmessage=' + fadmessage + '' + '&po=' + po + '';
+        var dataString = 'extras=' + fdextras + '' + '&fdmrms=' + fdmrms + '' + '&fdname=' + fdname + '' + '&fdemail=' + fdemail + '' + '&fdPhoneNumber=' + fdPhoneNumber + '&dfPickupDate=' + dfPickupDate + '' + '&po=' + po + '';
         //alert(dataString); return false;
 
       /*  $.ajax({

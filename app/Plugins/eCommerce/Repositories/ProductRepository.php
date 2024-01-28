@@ -541,7 +541,7 @@ WHERE `et`.`type` = 'category' and  et.alias = ?)
 					$bookings = Booking::select( 'product_id','status' )
 					                   ->where( 'PickingUpDate', '<=', $star_date )
 					                   ->where( 'DroppingOffDate', '>=', $star_date )
-					                   ->where( 'status',  'completed' )
+					                   ->where( 'status',  'paid' )
 						->rightJoin('ec_orders', 'ec_bookings.order_id', '=', 'ec_orders.id')
 						               ->get();
 					$exclude_id = [];

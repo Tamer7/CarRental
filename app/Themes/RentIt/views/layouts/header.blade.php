@@ -27,13 +27,13 @@
             font-family: 'Montserrat', sans-serif;  
         }
         .header *{
-            background-color:#1D3F6E !important;
+            background-color:#3A386F  !important;
             color:white !important;
             font-family: 'Montserrat', sans-serif;      
           }
           .header i{
             font-family: FontAwesome !important;
-            background-color: goldenrod !important;
+            background:linear-gradient(to bottom right, #B19158, #B19158 70%, #7F5E26) !important; 
             padding: 5px 8px;
             font-size: 18px;
             border-radius: 50%;
@@ -52,7 +52,7 @@
         }
         .header .container{
             width:100% !important;
-            padding-left:7vw;
+            /* padding-left:7vw; */
         }
         .header .title{
             background-color:transparent !important;
@@ -328,7 +328,7 @@
                 <nav class="navigation-bar closed clearfix">
                     <!-- Logo --><?php
 				if(get_theme_mod( 'header_logo' )){ ?>
-                    <div class="m_logo " style="background-color: #1D3F6E !important;">
+                    <div class="m_logo " style="background-color: linear-gradient(to bottom right, #3A386F 80%, #191726) !important;">
     
                         <a href="{{ url('/') }}"
                         >

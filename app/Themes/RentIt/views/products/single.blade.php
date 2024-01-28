@@ -295,7 +295,7 @@
                            value="{{old('PickingUpDate', session('PickingUpDate'))}}"
                            placeholder="{{get_theme_mod('rentit_calendar_format', 'MM/DD/YYYY')}}"
                            name="PickingUpDate"
-
+                           data-toggle="tooltip"
                     >
                     <span class="form-control-icon"><i class="fa fa-calendar"></i></span>
                 </div>
